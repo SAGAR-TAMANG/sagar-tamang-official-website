@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid with Rows</title>
+</head>
+<body>
+  <button id="btn-1">
+    hi
+  </button>
+
+  <script>
+    btn1 = document.getElementById('btn-1');
+
+    function showPopupPeople1() {
+      document.getElementById('popup-people-1').style.display = 'block';
+    }
+
+    function closePopupPeople1() {
+      document.getElementById('popup-people-1').style.display = 'none';
+    }
+
+    btn1.addEventListener('click', function(event) { 
+      console.log("CLICKED");
+    });
+  </script>
+</body>
+</html>
