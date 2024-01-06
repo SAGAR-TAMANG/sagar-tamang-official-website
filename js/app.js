@@ -115,20 +115,20 @@ if (currentFileName === "index.html") {
 
 // POP UP BEGINS
 if (currentFileName === "people-and-leadership.html"){
-  btn1 = document.getElementById('popup-link-people-1');
+  // btn1 = document.getElementById('popup-link-people-1');
   btn2 = document.getElementById('popup-link-people-2');
   
-  function showPopupPeople1() {
-    document.getElementById('popup-people-1').style.display = 'block';
-  }
+  // function showPopupPeople1() {
+  //   document.getElementById('popup-people-1').style.display = 'block';
+  // }
   
-  function closePopupPeople1() {
-    document.getElementById('popup-people-1').style.display = 'none';
-  }
+  // function closePopupPeople1() {
+  //   document.getElementById('popup-people-1').style.display = 'none';
+  // }
   
-  btn1.addEventListener('click', function(event) { 
-    showPopupPeople1();
-  });
+  // btn1.addEventListener('click', function(event) { 
+  //   showPopupPeople1();
+  // });
   
   function showPopupPeople2() {
     document.getElementById('popup-people-2').style.display = 'block';
