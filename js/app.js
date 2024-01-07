@@ -91,7 +91,7 @@ function toggleTheme(){
 var currentFileName = window.location.pathname.split('/').pop();
 
 // Check if the file name is "example.html"
-if (currentFileName === "index.html") {
+if (currentFileName === "") {
 
   nav_btn = document.querySelectorAll('#nav ul a');
 
