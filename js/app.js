@@ -1,3 +1,5 @@
+console.log("LOADED JS SUCCESSFULLY");
+
 function submitForm(event) {
   event.preventDefault(); // Prevent the default form submission
   
