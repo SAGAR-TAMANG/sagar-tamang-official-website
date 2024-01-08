@@ -91,7 +91,7 @@ function toggleTheme(){
 var currentFileName = window.location.pathname.split('/').pop();
 
 // Check if the file name is "example.html"
-if (currentFileName === "") {
+if (currentFileName === "" || currentFileName === "index.html") {
 
   nav_btn = document.querySelectorAll('#nav ul a');
 
@@ -112,7 +112,6 @@ if (currentFileName === "") {
       });
     });
   });
-
 };
 
 // POP UP BEGINS
