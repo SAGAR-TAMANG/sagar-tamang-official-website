@@ -1,23 +1,11 @@
 console.log("LOADED JS SUCCESSFULLY");
 
-function submitForm(event) {
-  event.preventDefault(); // Prevent the default form submission
-  
-  // Get form input values
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const phone = document.getElementById('phone').value;
-  const message = document.getElementById('message').value;
-  const termsChecked = document.getElementById('terms').checked;
-
-  // Validate or process the input as needed
-  // For now, let's just log the values to the console
-  console.log('Name:', name);
-  console.log('Email:', email);
-  console.log('Phone:', phone);
-  console.log('Message:', message);
-  console.log('Terms Checked:', termsChecked);
-};
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM LOADED");
+  // Hide loading screen when content is loaded
+  document.getElementById("loading-screen").style.display = "none";
+  document.getElementById("body-wrapper").style.display = "block";
+});
 
 function toggleMenu(){
   var nav = document.getElementById("nav");
@@ -37,23 +25,26 @@ btnMenu.addEventListener("click", function(){
 function toggleMenu(){
   var nav = document.getElementById("nav");
   var slider = document.getElementsByClassName("slider");
-  
-  // if (nav.style.display === "block") {
-  //   nav.style.display = "none";
-  // } else {
-  //   nav.style.display = "block";
-  // }
     
   if (nav.style.width === "50%") {
     nav.style.width = "0%";
-    // btnMenu.style.backgroundColor = "var(--text)";
-    // btnMenu.style.color = "var(--bg)";
   } else {
     nav.style.width = "50%";
-    // btnMenu.style.backgroundColor = "var(--bg)";
-    // btnMenu.style.color = "var(--text)";  
   }
 };
+
+if(!localStorage.getItem('theme')) {
+  localStorage.setItem('theme', 'light');
+  theme = localStorage.getItem('theme');
+}
+
+if (theme === 'dark') {
+  if (body.classList.contains('light'))
+    body.classList.replace('light', 'dark');
+} else if (theme === 'light') {
+  if (body.classList.contains('dark'))
+    body.classList.replace('dark', 'light');
+}
 
 var isButtonPressed = false;
 
@@ -62,10 +53,14 @@ function toggleTheme(){
   
   if (isButtonPressed) {
     console.log('pressed twice');
-    if (theme.classList.contains('light'))
+    if (theme.classList.contains('light')){
       theme.classList.replace('light', 'dark');
-    else
+      localStorage.setItem('theme', 'dark');
+    }
+    else {
       theme.classList.replace('dark', 'light');
+      localStorage.setItem('theme', 'light');
+    }
   }
   else {
     console.log('Pressed once')
@@ -75,18 +70,6 @@ function toggleTheme(){
     }, 10); // Adjust the time as needed
   }
 };
-
-// Smooth Scrolling
-
-// nav_btn = document.querySelectorAll('#nav ul a');
-
-// btn1.addEventListener('click', function (e) {
-//   e.preventDefault();
-
-//   document.getElementById(this.getAttribute('data-target')).scrollIntoView({
-//     behavior: 'smooth'
-//   });
-// });
 
 var currentFileName = window.location.pathname.split('/').pop();
 
@@ -118,19 +101,7 @@ if (currentFileName === "" || currentFileName === "index.html") {
 if (currentFileName === "people-and-leadership.html"){
   // btn1 = document.getElementById('popup-link-people-1');
   btn2 = document.getElementById('popup-link-people-2');
-  
-  // function showPopupPeople1() {
-  //   document.getElementById('popup-people-1').style.display = 'block';
-  // }
-  
-  // function closePopupPeople1() {
-  //   document.getElementById('popup-people-1').style.display = 'none';
-  // }
-  
-  // btn1.addEventListener('click', function(event) { 
-  //   showPopupPeople1();
-  // });
-  
+ 
   function showPopupPeople2() {
     document.getElementById('popup-people-2').style.display = 'block';
   }
@@ -232,21 +203,3 @@ if (currentFileName === "project.html") {
   wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
   wrapper.addEventListener("mouseleave", autoPlay);
 };
-
-document.getElementById('myFormContact').addEventListener('submit', function(event) {
-  if (!isFormValid()) {
-    event.preventDefault(); // Prevent the form submission if fields are not filled
-    alert('Please fill in all fields before submitting.');
-  }
-});
-
-function isFormValid() {
-  // Check if all required fields are filled
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var phone = document.getElementById('phone').value;
-  var message = document.getElementById('message').value;
-  var terms = document.getElementById('terms').checked;
-
-  return name && email && phone && message && terms;
-}

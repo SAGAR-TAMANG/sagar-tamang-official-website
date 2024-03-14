@@ -10,476 +10,497 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="light">
-  <header id="home">
-    <div class="bg-present py-2 position-fixed" style="width: 100%; z-index:1000;">
-      <div class="row px-3">
-        <div class="col-6 p-0 m-0 overflow-hidden">
-          Sagar Tamang
-        </div>
-          <div class="col-6">
-          <div class="d-flex justify-content-right">
-            <button class="menu-toggle fs-2 bg-inverse" id="btn-menu">☰</span>
+<div class="loading-screen" id="loading-screen">
+  <div class="loader">
+      <svg viewBox="0 0 80 80">
+          <circle id="test" cx="40" cy="40" r="32"></circle>
+      </svg>
+  </div>
+  
+  <div class="loader triangle">
+      <svg viewBox="0 0 86 80">
+          <polygon points="43 8 79 72 7 72"></polygon>
+      </svg>
+  </div>
+  
+  <div class="loader">
+      <svg viewBox="0 0 80 80">
+          <rect x="8" y="8" width="64" height="64"></rect>
+      </svg>
+  </div>
+</div>
+<body class="light" id="body">
+  <div id="body-wrapper" style="display: none;">
+    <header id="home">
+      <div class="bg-present py-2 position-fixed" style="width: 100%; z-index:1000;">
+        <div class="row px-3">
+          <div class="col-6 p-0 m-0 overflow-hidden">
+            Sagar Tamang
           </div>
-          <div class="d-flex justify-content-right">
-            <nav id="nav" class="navbar">
-              <ul type="circle">
-                <li class="me-3 me-lg-5"><a href="#home">Home</a></li>
-                <li class="me-3 me-lg-5"><a href="#about">About</a></li>
-                <li class="me-3 me-lg-5"><a href="#projects">Projects</a></li>
-                <li class="me-3 me-lg-5"><a href="#contact">Contact</a></li>
-                <li class="me-3 me-lg-5 py-1" type="none">
-                  <label class="switch" onclick="toggleTheme()">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="big-header">
-      <p class="full-width-text">SAGAR TAMANG</p>
-    </div>
-    <div>
-      <img src="" alt="">
-    </div>
-  </header>
-  <main>
-    <div class="p-3 p-md-0">
-      <div class="container border">
-        <div class="row p-6 fs-0 p-4">
-          <div class="col-12 col-sm-4">
-            <div class="text-left mb-5">
-              <p>
-                I'm passinate about bringing a positive change in this world.
-              </p>
+            <div class="col-6">
+            <div class="d-flex justify-content-right">
+              <button class="menu-toggle fs-2 bg-inverse" id="btn-menu">☰</span>
             </div>
-          </div>
-          <div class="col-12 col-sm-4 d-flex justify-content-center fs-0" id="ashish-intro-middle">
-            <div class="vertical-line" id="vertical-line"></div>
-            <div class="card" style="width: 60%; padding: px; margin-top: 20px; margin-bottom: 20px;">
-              <img src="img/sagar1.jpg" alt="img" width="100%">
-              <p>
-                <b class="text-left">Hi Everyone!</b>
-                My name is Sagar Tamang
-                <br>
-                I am an aspiring Tech Entrepreneur.
-                <br>
-                I like to join thoughtful conversations with well minded people.
-              </p>
+            <div class="d-flex justify-content-right">
+              <nav id="nav" class="navbar">
+                <ul type="circle">
+                  <li class="me-3 me-lg-5"><a href="#home">Home</a></li>
+                  <li class="me-3 me-lg-5"><a href="#about">About</a></li>
+                  <li class="me-3 me-lg-5"><a href="#projects">Projects</a></li>
+                  <li class="me-3 me-lg-5"><a href="#contact">Contact</a></li>
+                  <li class="me-3 me-lg-5 py-1" type="none">
+                    <label class="switch" onclick="toggleTheme()">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                    </label>
+                  </li>
+                </ul>
+              </nav>
             </div>
-          </div>
-          <div class="col-12 col-sm-4 text-right mt-5 mt-sm-0">
-            <p>
-              Studying in The Assam Kaziranga University
-              <br>
-              Jorhat, Assam, India
-              <br>
-            </p>
           </div>
         </div>
       </div>
-    </div>
-    <section id="about" class="mt-5 p-4 p-lg-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <p class="text-bold fs-4">About Me</p>
-            <div class="col-12 d-flex justify-content-center align-items-center">
-              <img src="img/st-logo.jpg" alt="logo" style="width:20%;">
-            </div>
-          </div>
-          <div class="col-12 col-md-6 fs-2">
-            <p class="text-bold">
-              Currently I am joining board meetings where decisions are made.
-              <br>
-              I design and develop websites (& Web Applications), along with other allied creative tasks.
-            </p>
-            <p class="fs-1">
-              Coding, Reading, Playing Guitar, Talking about something thoughtful, & Gym are my hobbies.
-            </p>
-            <br>
-            <a href="about.html">
-              <button class="btn-1 fs-1">Read more</button>
-            </a>
-          </div>
-        </div>
+      <div class="big-header">
+        <p class="full-width-text">SAGAR TAMANG</p>
       </div>
-    </section>
-    <section id="projects" class="mt-5 p-4 p-lg-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p class="fs-4 text-bold">
-              Projects*
-            </p>
-          </div>
-          <div class="col-12">
-            <p>Some recent projects</p>
-          </div>
-        </div>
-        <div class="grid-container pt-4 pt-sm-0">
-          <div class="item-a overflow-hidden d-flex align-items-center p-0" style="border-radius: 20px;">
-            <div>
-              <a href="https://github.com/SAGAR-TAMANG/website-rebranded-successscholar/blob/main/README.md" target="_blank">
-                <img src="projects/full-stack-web-dev/website-rebranded-successscholar.jpg" alt="img..." width="100%" style="position: top;">
-              </a>
-            </div>
-          </div>
-          <div class="item-b d-flex align-items-center overflow-hidden" style="border-radius: 20px;">
-            <a href="#">
-              <video src="./projects/video/technologies-used.mp4" autoplay muted loop></video>
-            </a>
-          </div>
-          <div class="item-c d-flex overflow-hidden justify-content-center" style="border-radius: 20px;">
-            <a href="#">
-              <video src="./projects/video/technologies-used 2.mp4" autoplay muted loop></video>
-            </a>
-          </div>
-          <div class="item-d overflow-hidden d-flex align-items-center" style="border-radius: 20px;">
-            <a href="https://github.com/SAGAR-TAMANG/academic-portfolio" target="_blank">
-              <img src="projects/full-stack-web-dev/academic-portfolio.jpg" alt="img..." width="100%" style="position: top;">
-            </a>
-          </div>
-          <div class="item-e overflow-hidden d-flex align-items-center">
-            <a href="https://successjobs.successscholar.in/" target="_blank">
-              <img src="projects/web-app/Dynamic-Job-Tracker.jpg" alt="img..." width="100%" style="position: top;">
-            </a>
-          </div>
-          <div class="item-f overflow-hidden d-flex align-items-center">
-            <a href="https://github.com/SAGAR-TAMANG/personal-porfolio-web-tech" target="_blank">
-              <img src="projects/full-stack-web-dev/personal-portfolio.jpg" alt="img..." width="100%" style="position: center;">
-            </a>
-          </div>
-        </div>
-        <div class="col-12 mt-2">
-          <a href="project.html">
-            <div class="pt-1 mx-3 mx-sm-0">
-              <button class="btn-1 fs-1" id="btn1" data-target="home">Explore all projects</button>
-            </div>
-          </a>
-        </div>     
+      <div>
+        <img src="" alt="">
       </div>
-    </section>
-    <section id="services" class="p-4 p-lg-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-1">
-            <p class="fs-4 text-bold">
-              Services
-            </p>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 mb-1">
-            <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Full Stack Web Development
-              </p>
-              <p class="fs-0 py-2">
-                Elevating digital visions with a fusion of front-end finesse and back-end brilliance in Full Stack Web Development.
-                <br>
-                <br>
-                <span class="text-bold">Let's Discuss</span>
-              </p>
-              <a href="#contact" style="color: var(--bg)">
-                <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 mb-1">
-            <div class="card border-dotted h-100 p-5 me-1 text-center">
-              <div class="d-flex align-items-center justify-content-center h-75">
-                <p class="text-bold" style="font-size: 50px;">
-                  <span><i class="fa-solid fa-star-of-life"></i></span>
+    </header>
+    <main>
+      <div class="p-3 p-md-0">
+        <div class="container border">
+          <div class="row p-6 fs-0 p-4">
+            <div class="col-12 col-sm-4">
+              <div class="text-left mb-5">
+                <p>
+                  I'm passinate about bringing a positive change in this world.
                 </p>
               </div>
-              <p class="fs-0 p-0">
-                All projects are made with love.
-              </p>
             </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 mb-1">
-            <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Automated Web Scraping
-              </p>
-              <p class="fs-0 py-2">
-                Automating data extraction from websites using the power of Selenium and Python, ensuring accuracy and efficiency in gathering valuable information.
-                <br>
-                <br>
-                <span class="text-bold">Let's Start Now</span>
-              </p>
-              <a href="#contact" style="color: var(--bg)">
-                <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 mb-1">
-            <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Prompt Engineering
-              </p>
-              <p class="fs-0 py-2">
-                Visual Storytelling Mastery: Transform raw footage into captivating narratives. Seamless edits that
-                bring your stories to life—because every moment deserves its own cinematic touch.
-                <br>
-                <br>
-                <span class="text-bold">Let's Begin</span>
-              </p>
-              <a href="#contact" style="color: var(--bg)">
-                <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 mb-1">
-            <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Natural Language Processing (NLP)
-              </p>
-              <p class="fs-0 py-2">
-                Driving innovation in NLP with cutting-edge solutions leveraging powerful Large Language Models for advanced language understanding and processing.
-                <br>
-                <br>
-                <span class="text-bold">Let's Build Stuff</span>
-              </p>
-              <a href="#contact" style="color: var(--bg)">
-                <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 col-lg-3 mb-1">
-            <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
-              <p class="text-bold fs-2">
-                Web Application Development
-              </p>
-              <p class="fs-0 py-2">
-                Expertise in building robust and scalable web applications using the Django framework, from concept to deployment.
-                <br>
-                <br>
-                <span class="text-bold">Let's Collab</span>
-              </p>
-              <a href="#contact" style="color: var(--bg)">
-                <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 mb-1">
-            <div class="card bg-moonshine h-100 p-5 text-center" style="box-sizing: border-box">
-              <div class="d-flex align-items-center justify-content-center">
-                <p class="text-bold" style="font-size: 50px;">
-                  <span><i class="fa-solid fa-star-of-life"></i></span><span><i class="fa-solid fa-star-of-life"></i></span>
+            <div class="col-12 col-sm-4 d-flex justify-content-center fs-0" id="ashish-intro-middle">
+              <div class="vertical-line" id="vertical-line"></div>
+              <div class="card" style="width: 60%; padding: px; margin-top: 20px; margin-bottom: 20px;">
+                <img src="img/sagar1.jpg" alt="img" width="100%">
+                <p>
+                  <b class="text-left">Hi Everyone!</b>
+                  My name is Sagar Tamang
+                  <br>
+                  I am an aspiring Tech Entrepreneur.
+                  <br>
+                  I like to join thoughtful conversations with well minded people.
                 </p>
               </div>
-              <p class="fs-0 p-0">
-                The exact cost of the work is fixed strictly after the provision and approval of the TOR. All additional
-                works are estimated according to the hourly cost. The work is divided into stages, each of which is
-                prepaid in full. The result is provided just in time, in full according to the TOR.
-              </p>
             </div>
-          </div>
-        </div>
-    </section>
-    <section id="contact" class="">
-      <div class="container" style="width: 90%; overflow:hidden;">
-        <div class="row">
-          <div class="col">
-            <div class="" style="width: 1920px; transform:translateX(-100px);">
-              <span class="gradient-text">CODING</span>
-              <span class="gradient-text">CODING</span>
-              <span class="gradient-text">CODING</span>
-              <span class="gradient-text">CODING</span>
-              <span class="gradient-text">CODING</span>
-              <span class="gradient-text">CODING</span>
-              <span class="gradient-text">CODING</span>
-              <span class="gradient-text">CODING</span>
-
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-              <span class="gradient-text">SAGAR</span>
-
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-              <span class="gradient-text">TAMANG</span>
-
-              <span class="gradient-text">DESIGN</span>
-              <span class="gradient-text">DESIGN</span>
-              <span class="gradient-text">DESIGN</span>
-              <span class="gradient-text">DESIGN</span>
-              <span class="gradient-text">DESIGN</span>
-              <span class="gradient-text">DEVELOP</span>
-              <span class="gradient-text">DEVELOP</span>
-              <span class="gradient-text">DEVELOP</span>
-              <span class="gradient-text">DEVELOP</span>
-              <span class="gradient-text">DEVELOP</span>
-
-              <span class="gradient-text">START UP</span>
-              <span class="gradient-text">START UP</span>
-              <span class="gradient-text">START UP</span>
-              <span class="gradient-text">START UP</span>
-              <span class="gradient-text">START UP</span>
-              <span class="gradient-text">START UP</span>
-              <span class="gradient-text">GET UP</span>
-              <span class="gradient-text">GET UP</span>
-              <span class="gradient-text">GET UP</span>
-              <span class="gradient-text">GET UP</span>
-              <span class="gradient-text">GET UP</span>
-              <span class="gradient-text">GET UP</span>
+            <div class="col-12 col-sm-4 text-right mt-5 mt-sm-0">
+              <p>
+                Studying in The Assam Kaziranga University
+                <br>
+                Jorhat, Assam, India
+                <br>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <center>
-        <div class="bg-present border-dotted"
-          style="height:280px; width:280px; box-sizing:border-box; border-radius:100%; transform: translateY(-110%);">
-          <div class="bg-inverse qr-code">
-            <img src="img/linktree-sagar.png" alt="qr..." style="height: 70%; transform: translateY(19%);">
+      <section id="about" class="mt-5 p-4 p-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <p class="text-bold fs-4">About Me</p>
+              <div class="col-12 d-flex justify-content-center align-items-center">
+                <img src="img/st-logo.jpg" alt="logo" style="width:20%;">
+              </div>
+            </div>
+            <div class="col-12 col-md-6 fs-2">
+              <p class="text-bold">
+                Currently I am joining board meetings where decisions are made.
+                <br>
+                I design and develop websites (& Web Applications), along with other allied creative tasks.
+              </p>
+              <p class="fs-1">
+                Coding, Reading, Playing Guitar, Talking about something thoughtful, & Gym are my hobbies.
+              </p>
+              <br>
+              <a href="about.html">
+                <button class="btn-1 fs-1">Read more</button>
+              </a>
+            </div>
           </div>
         </div>
-      </center>
-      <div class="p-3" style="transform: translateY(-15%);">
-        <div class="p-0 p-lg-5">
-          <div class="row d-flex justify-content-center">
-            <div class="col-12 col-lg-6" style="overflow: hidden; box-sizing:border-box;">
-              <div class="card-inverse m-2 text-center p-3 p-md-5">
-                <span class="full-width-text-subhead-contacts text-center">CONTACTS</span>
-                <br>
-                <div class="speech-bubble fs-2">
-                  <p>
-                    Let's have some discussion,
-                    <br>
-                    <a href="https://www.instagram.com/tamang_sagar0000" target="_blank">
-                      <span>tamang_sagar0000 <i class="fa-brands fa-instagram fa-lg"></i></span>
-                    </a>
+      </section>
+      <section id="projects" class="mt-5 p-4 p-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="fs-4 text-bold">
+                Projects*
+              </p>
+            </div>
+            <div class="col-12">
+              <p>Some recent projects</p>
+            </div>
+          </div>
+          <div class="grid-container pt-4 pt-sm-0">
+            <div class="item-a overflow-hidden d-flex align-items-center p-0" style="border-radius: 20px;">
+              <div>
+                <a href="https://github.com/SAGAR-TAMANG/website-rebranded-successscholar/blob/main/README.md" target="_blank">
+                  <img src="projects/full-stack-web-dev/website-rebranded-successscholar.jpg" alt="img..." width="100%" style="position: top;">
+                </a>
+              </div>
+            </div>
+            <div class="item-b d-flex align-items-center overflow-hidden" style="border-radius: 20px;">
+              <a href="#">
+                <video src="./projects/video/technologies-used.mp4" autoplay muted loop></video>
+              </a>
+            </div>
+            <div class="item-c d-flex overflow-hidden justify-content-center" style="border-radius: 20px;">
+              <a href="#">
+                <video src="./projects/video/technologies-used 2.mp4" autoplay muted loop></video>
+              </a>
+            </div>
+            <div class="item-d overflow-hidden d-flex align-items-center" style="border-radius: 20px;">
+              <a href="https://github.com/SAGAR-TAMANG/academic-portfolio" target="_blank">
+                <img src="projects/full-stack-web-dev/academic-portfolio.jpg" alt="img..." width="100%" style="position: top;">
+              </a>
+            </div>
+            <div class="item-e overflow-hidden d-flex align-items-center">
+              <a href="https://successjobs.successscholar.in/" target="_blank">
+                <img src="projects/web-app/Dynamic-Job-Tracker.jpg" alt="img..." width="100%" style="position: top;">
+              </a>
+            </div>
+            <div class="item-f overflow-hidden d-flex align-items-center">
+              <a href="https://github.com/SAGAR-TAMANG/personal-porfolio-web-tech" target="_blank">
+                <img src="projects/full-stack-web-dev/personal-portfolio.jpg" alt="img..." width="100%" style="position: center;">
+              </a>
+            </div>
+          </div>
+          <div class="col-12 mt-2">
+            <a href="project.html">
+              <div class="pt-1 mx-3 mx-sm-0">
+                <button class="btn-1 fs-1" id="btn1" data-target="home">Explore all projects</button>
+              </div>
+            </a>
+          </div>     
+        </div>
+      </section>
+      <section id="services" class="p-4 p-lg-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-1">
+              <p class="fs-4 text-bold">
+                Services
+              </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Full Stack Web Development
+                </p>
+                <p class="fs-0 py-2">
+                  Elevating digital visions with a fusion of front-end finesse and back-end brilliance in Full Stack Web Development.
+                  <br>
+                  <br>
+                  <span class="text-bold">Let's Discuss</span>
+                </p>
+                <a href="#contact" style="color: var(--bg)">
+                  <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card border-dotted h-100 p-5 me-1 text-center">
+                <div class="d-flex align-items-center justify-content-center h-75">
+                  <p class="text-bold" style="font-size: 50px;">
+                    <span><i class="fa-solid fa-star-of-life"></i></span>
                   </p>
-                </div>          
-                <img src="img/sagar2.jpg" style="border-radius: 10px;" alt="img" width="95%">
+                </div>
+                <p class="fs-0 p-0">
+                  All projects are made with love.
+                </p>
               </div>
             </div>
-            <div class="col-12 col-lg-6" style="overflow: hidden; box-sizing:border-box;">
-              <div class="card-inverse m-2 p-3 p-md-5">
-                <span class="fs-3 text-left text-bold">I promise to give my 100% in all the projects I undertake.</span>
-                <br>
-                <!-- formspree  -->
-                <form id="myFormContact" action="https://formspree.io/f/xqkvwqbo" method="POST">
-                  <label for="name">
-                    Name:
-                    <input type="text" id="name" name="name">
-                  </label>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Automated Web Scraping
+                </p>
+                <p class="fs-0 py-2">
+                  Automating data extraction from websites using the power of Selenium and Python, ensuring accuracy and efficiency in gathering valuable information.
                   <br>
-                  <label for="email">
-                    Email:
-                    <input type="email" id="email" name="email">
-                  </label>
                   <br>
-                  <label for="phone">
-                    Phone:
-                    <input type="tel" id="phone" name="phone">
-                  </label>
+                  <span class="text-bold">Let's Start Now</span>
+                </p>
+                <a href="#contact" style="color: var(--bg)">
+                  <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Prompt Engineering
+                </p>
+                <p class="fs-0 py-2">
+                  Visual Storytelling Mastery: Transform raw footage into captivating narratives. Seamless edits that
+                  bring your stories to life—because every moment deserves its own cinematic touch.
                   <br>
-                  <label for="message">
-                    Message:
-                    <textarea id="message" name="message"></textarea>
-                  </label>
                   <br>
-                  <label for="terms" class="d-flex align-items-center justify-content-start">
-                    <input type="checkbox" style="margin: 0; padding: 0; width: 5%;" id="terms"> I agree to the Privacy Policy.
-                  </label>
+                  <span class="text-bold">Let's Begin</span>
+                </p>
+                <a href="#contact" style="color: var(--bg)">
+                  <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Natural Language Processing (NLP)
+                </p>
+                <p class="fs-0 py-2">
+                  Driving innovation in NLP with cutting-edge solutions leveraging powerful Large Language Models for advanced language understanding and processing.
                   <br>
-                  <!-- <button class="btn-2" type="submit" onclick="submitForm(event)">Send</button> -->
-                  <button class="btn-2" type="submit">Send</button>
-                </form>
-                <br>
-                <span style="font-size: 30px;"><i class="fa-solid fa-star-of-life"></i></span>All projects are made with
-                love.
-                <br>
-                <div class="fs-4">
-                  <span class="divider"></span>
-                  LET'S START PROJECT
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-12 col-lg-6 text-left mb-3"><span class="py-0 px-3"
-                          style="width: 100%;border: 2px solid; border-radius: 20px;">TOGETHER</span></div>
-                      <div class="col-12 col-lg-6 text-left text-sm-right"><span class="py-1 px-3 bg-present"
-                          style="width: 100%; border-radius: 20px;">NOW</span></div>
+                  <br>
+                  <span class="text-bold">Let's Build Stuff</span>
+                </p>
+                <a href="#contact" style="color: var(--bg)">
+                  <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mb-1">
+              <div class="card-inverse card-service-hover p-5 h-100 me-1 overflow-hidden" style="box-sizing: border-box">
+                <p class="text-bold fs-2">
+                  Web Application Development
+                </p>
+                <p class="fs-0 py-2">
+                  Expertise in building robust and scalable web applications using the Django framework, from concept to deployment.
+                  <br>
+                  <br>
+                  <span class="text-bold">Let's Collab</span>
+                </p>
+                <a href="#contact" style="color: var(--bg)">
+                  <span><i class="fa-solid fa-arrow-right fa-xl"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mb-1">
+              <div class="card bg-moonshine h-100 p-5 text-center" style="box-sizing: border-box">
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="text-bold" style="font-size: 50px;">
+                    <span><i class="fa-solid fa-star-of-life"></i></span><span><i class="fa-solid fa-star-of-life"></i></span>
+                  </p>
+                </div>
+                <p class="fs-0 p-0">
+                  The exact cost of the work is fixed strictly after the provision and approval of the TOR. All additional
+                  works are estimated according to the hourly cost. The work is divided into stages, each of which is
+                  prepaid in full. The result is provided just in time, in full according to the TOR.
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section id="contact" class="">
+        <div class="container" style="width: 90%; overflow:hidden;">
+          <div class="row">
+            <div class="col">
+              <div class="" style="width: 1920px; transform:translateX(-100px);">
+                <span class="gradient-text">CODING</span>
+                <span class="gradient-text">CODING</span>
+                <span class="gradient-text">CODING</span>
+                <span class="gradient-text">CODING</span>
+                <span class="gradient-text">CODING</span>
+                <span class="gradient-text">CODING</span>
+                <span class="gradient-text">CODING</span>
+                <span class="gradient-text">CODING</span>
+  
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+                <span class="gradient-text">SAGAR</span>
+  
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+                <span class="gradient-text">TAMANG</span>
+  
+                <span class="gradient-text">DESIGN</span>
+                <span class="gradient-text">DESIGN</span>
+                <span class="gradient-text">DESIGN</span>
+                <span class="gradient-text">DESIGN</span>
+                <span class="gradient-text">DESIGN</span>
+                <span class="gradient-text">DEVELOP</span>
+                <span class="gradient-text">DEVELOP</span>
+                <span class="gradient-text">DEVELOP</span>
+                <span class="gradient-text">DEVELOP</span>
+                <span class="gradient-text">DEVELOP</span>
+  
+                <span class="gradient-text">START UP</span>
+                <span class="gradient-text">START UP</span>
+                <span class="gradient-text">START UP</span>
+                <span class="gradient-text">START UP</span>
+                <span class="gradient-text">START UP</span>
+                <span class="gradient-text">START UP</span>
+                <span class="gradient-text">GET UP</span>
+                <span class="gradient-text">GET UP</span>
+                <span class="gradient-text">GET UP</span>
+                <span class="gradient-text">GET UP</span>
+                <span class="gradient-text">GET UP</span>
+                <span class="gradient-text">GET UP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <center>
+          <div class="bg-present border-dotted"
+            style="height:280px; width:280px; box-sizing:border-box; border-radius:100%; transform: translateY(-110%);">
+            <div class="bg-inverse qr-code">
+              <img src="img/linktree-sagar.png" alt="qr..." style="height: 70%; transform: translateY(19%);">
+            </div>
+          </div>
+        </center>
+        <div class="p-3" style="transform: translateY(-15%);">
+          <div class="p-0 p-lg-5">
+            <div class="row d-flex justify-content-center">
+              <div class="col-12 col-lg-6" style="overflow: hidden; box-sizing:border-box;">
+                <div class="card-inverse m-2 text-center p-3 p-md-5">
+                  <span class="full-width-text-subhead-contacts text-center">CONTACTS</span>
+                  <br>
+                  <div class="speech-bubble fs-2">
+                    <p>
+                      Let's have some discussion,
+                      <br>
+                      <a href="https://www.instagram.com/tamang_sagar0000" target="_blank">
+                        <span>tamang_sagar0000 <i class="fa-brands fa-instagram fa-lg"></i></span>
+                      </a>
+                    </p>
+                  </div>          
+                  <img src="img/sagar2.jpg" style="border-radius: 10px;" alt="img" width="95%">
+                </div>
+              </div>
+              <div class="col-12 col-lg-6" style="overflow: hidden; box-sizing:border-box;">
+                <div class="card-inverse m-2 p-3 p-md-5">
+                  <span class="fs-3 text-left text-bold">I promise to give my 100% in all the projects I undertake.</span>
+                  <br>
+                  <!-- formspree  -->
+                  <form id="myFormContact" action="https://formspree.io/f/xqkvwqbo" method="POST">
+                    <label for="name">
+                      Name:
+                      <input type="text" id="name" name="name" required>
+                    </label>
+                    <br>
+                    <label for="email">
+                      Email:
+                      <input type="email" id="email" name="email" required>
+                    </label>
+                    <br>
+                    <label for="phone">
+                      Phone: (Optional)
+                      <input type="tel" id="phone" name="phone">
+                    </label>
+                    <br>
+                    <label for="message">
+                      Message:
+                      <textarea id="message" name="message" required></textarea>
+                    </label>
+                    <br>
+                    <label for="terms" class="d-flex align-items-center justify-content-start">
+                      <input type="checkbox" style="margin: 0; padding: 0; width: 5%;" id="terms" required> I agree to the Privacy Policy.
+                    </label>
+                    <br>
+                    <!-- <button class="btn-2" type="submit" onclick="submitForm(event)">Send</button> -->
+                    <button class="btn-2" type="submit">Send</button>
+                  </form>
+                  <br>
+                  <span style="font-size: 30px;"><i class="fa-solid fa-star-of-life"></i></span>All projects are made with
+                  love.
+                  <br>
+                  <div class="fs-4">
+                    <span class="divider"></span>
+                    LET'S START PROJECT
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 col-lg-6 text-left mb-3"><span class="py-0 px-3"
+                            style="width: 100%;border: 2px solid; border-radius: 20px;">TOGETHER</span></div>
+                        <div class="col-12 col-lg-6 text-left text-sm-right"><span class="py-1 px-3 bg-present"
+                            style="width: 100%; border-radius: 20px;">NOW</span></div>
+                      </div>
                     </div>
+                    <span class="divider"></span>
                   </div>
-                  <span class="divider"></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="bg-inverse py-4 m-0">
-    <div class="row text--md-start m-5">
-      <div class="col-12 col-lg-6 my-1">
-        <p class="fs-5 text-center">SAGAR TAMANG</p>
-      </div>
-      <div class="col-12 col-sm-4 col-lg-2">
-        <span class="fs-2 text-bold">Quick Links</span>
-        <br>
-        <ul type="none" style="display: block; padding:0;">
-          <li><a href="templates/people-and-leadership.html" class="inverse pt-3">People & Leadership</a></li>
-          <li><a href="./projects/RESUME+Sagar+Tamang django.pdf" download="Resume Sagar Tamang.pdf" class="inverse">Resume</a></li>
-          <li><a href="./about.html" class="inverse">About</a></li>
-          <li><a href="./templates/Career.html" class="inverse">Career</a></li>
-          <br>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-4 col-lg-2">
-        <span class="fs-2 text-bold">Social</span>
-        <br>
-        <ul type="none" style="display: block; padding:0;">
-          <li><a href="https://www.youtube.com/@sagartamang0000" class="inverse pt-3">YouTube</a></li>
-          <li><a href="https://www.linkedin.com/in/sagar-tmg/" class="inverse">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/tamang_sagar0000" class="inverse">Instagram</a></li>
-          <br>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-4 col-lg-2">
-        <span class="fs-2 text-bold">Get in Touch</span>
-        <br>
-        <ul type="none" style="display: block; padding:0;">
-          <li><a href="./contact.html" class="inverse pt-3">Contact Us</a></li>
-          <li><a href="#" class="inverse">Our Offices</a></li>
-          <br>
-        </ul>
-      </div>
-    </div>
-    <!-- <span class="divider mx-5"></div> -->
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6 mt-3 text-center">
-          <span class="">© Sagar Tamang 2024</span> 
+      </section>
+    </main>
+    <footer class="bg-inverse py-4 m-0">
+      <div class="row text--md-start m-5">
+        <div class="col-12 col-lg-6 my-1">
+          <p class="fs-5 text-center">SAGAR TAMANG</p>
         </div>
-        <div class="col-12 col-sm-6 my-3 text-center fs-0">
-          Built with <span class="fa-regular fa-heart"></span> by 
-          <a href="https://www.linkedin.com/in/sagar-tmg/" class="footer-anchor" target="_blank">
-            Sagar Tamang
-          </a>       
+        <div class="col-12 col-sm-4 col-lg-2">
+          <span class="fs-2 text-bold">Quick Links</span>
+          <br>
+          <ul type="none" style="display: block; padding:0;">
+            <li><a href="templates/people-and-leadership.html" class="inverse pt-3">People & Leadership</a></li>
+            <li><a href="./projects/RESUME+Sagar+Tamang django.pdf" download="Resume Sagar Tamang.pdf" class="inverse">Resume</a></li>
+            <li><a href="./about.html" class="inverse">About</a></li>
+            <li><a href="./templates/Career.html" class="inverse">Career</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 col-lg-2">
+          <span class="fs-2 text-bold">Social</span>
+          <br>
+          <ul type="none" style="display: block; padding:0;">
+            <li><a href="https://www.youtube.com/@sagartamang0000" class="inverse pt-3">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/in/sagar-tmg/" class="inverse">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/tamang_sagar0000" class="inverse">Instagram</a></li>
+            <br>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 col-lg-2">
+          <span class="fs-2 text-bold">Get in Touch</span>
+          <br>
+          <ul type="none" style="display: block; padding:0;">
+            <li><a href="./contact.html" class="inverse pt-3">Contact Us</a></li>
+            <li><a href="#" class="inverse">Our Offices</a></li>
+            <br>
+          </ul>
         </div>
       </div>
-    </div>
-  </footer>
+      <!-- <span class="divider mx-5"></div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 mt-3 text-center">
+            <span class="">© Sagar Tamang 2024</span> 
+          </div>
+          <div class="col-12 col-sm-6 my-3 text-center fs-0">
+            Built with <span class="fa-regular fa-heart"></span> by 
+            <a href="https://www.linkedin.com/in/sagar-tmg/" class="footer-anchor" target="_blank">
+              Sagar Tamang
+            </a>       
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
   
   <script src="./js/app.js" type="text/javascript"></script>
 </body>
