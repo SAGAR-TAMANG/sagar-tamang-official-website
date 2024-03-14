@@ -1,8 +1,15 @@
 console.log("LOADED JS SUCCESSFULLY");
 
-document.addEventListener("DOMContentLoaded", function() {
-  console.log("DOM LOADED");
-  // Hide loading screen when content is loaded
+// document.addEventListener("DOMContentLoaded", function() {
+//   console.log("DOM LOADED");
+//   // Hide loading screen when content is loaded
+//   document.getElementById("loading-screen").style.display = "none";
+//   document.getElementById("body-wrapper").style.display = "block";
+// });
+
+window.addEventListener("load", function() {
+  console.log("Page fully loaded");
+  // Hide loading screen when the page is fully loaded
   document.getElementById("loading-screen").style.display = "none";
   document.getElementById("body-wrapper").style.display = "block";
 });
