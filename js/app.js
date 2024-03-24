@@ -35,12 +35,6 @@ window.addEventListener("load", function() {
   document.getElementById("body-wrapper").style.display = "block";
 });
 
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'G-FTRWLKC7HR');
-
 function toggleMenu(){
   var nav = document.getElementById("nav");
   if (nav.style.display === "block") {
