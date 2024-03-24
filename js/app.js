@@ -1,18 +1,45 @@
 console.log("LOADED JS SUCCESSFULLY");
 
-// document.addEventListener("DOMContentLoaded", function() {
-//   console.log("DOM LOADED");
-//   // Hide loading screen when content is loaded
-//   document.getElementById("loading-screen").style.display = "none";
-//   document.getElementById("body-wrapper").style.display = "block";
-// });
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("DOM CONTENT LOADED");
+
+  var currentFileName = window.location.pathname.split('/').pop();
+
+  // Check if the file name is "example.html"
+  if (currentFileName === "" || currentFileName === "index.html") {
+    nav_btn = document.querySelectorAll('#nav ul a');
+
+    // CODE FOR VERTICAL LINE IN THE MIDDLE HEADER
+    var ashishIntroMiddle = document.getElementById("ashish-intro-middle");
+    var verticalLine = document.getElementById("vertical-line");
+
+    verticalLine.style.height = (ashishIntroMiddle.offsetHeight + 40) + 'px';
+
+    // Smooth Scrolling
+
+    nav_btn.forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+    
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  };
+});
 
 window.addEventListener("load", function() {
   console.log("Page fully loaded");
-  // Hide loading screen when the page is fully loaded
   document.getElementById("loading-screen").style.display = "none";
   document.getElementById("body-wrapper").style.display = "block";
 });
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-FTRWLKC7HR');
 
 function toggleMenu(){
   var nav = document.getElementById("nav");
@@ -78,32 +105,6 @@ function toggleTheme(){
   }
 };
 
-var currentFileName = window.location.pathname.split('/').pop();
-
-// Check if the file name is "example.html"
-if (currentFileName === "" || currentFileName === "index.html") {
-
-  nav_btn = document.querySelectorAll('#nav ul a');
-
-  // CODE FOR VERTICAL LINE IN THE MIDDLE HEADER
-  var ashishIntroMiddle = document.getElementById("ashish-intro-middle");
-  var verticalLine = document.getElementById("vertical-line");
-
-  verticalLine.style.height = (ashishIntroMiddle.offsetHeight + 40) + 'px';
-
-  // Smooth Scrolling
-
-  nav_btn.forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-  
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-};
-
 // POP UP BEGINS
 if (currentFileName === "people-and-leadership.html"){
   // btn1 = document.getElementById('popup-link-people-1');
@@ -123,7 +124,6 @@ if (currentFileName === "people-and-leadership.html"){
 }
 
 // Starts the Carousel / Image Slider
-
 if (currentFileName === "project.html") {
   const wrapper = document.querySelector(".wrapper");
   const carousel = document.querySelector(".carousel");
