@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://sagartamang.com/</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://sagartamang.com/about.html</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagartamang.com/project.html</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagartamang.com/templates/people-and-leadership.html</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagartamang.com/projects/RESUME+Sagar+Tamang%20django.pdf</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagartamang.com/templates/Career.html</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagartamang.com/contact.html</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://sagartamang.com/index.html</loc>
+  <lastmod>2024-04-22T14:01:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
